@@ -2,5 +2,11 @@ class Card:
   def __init__(self, name, description, atk, hp):
     self.name = name
     self.description = description
-    slef.atk = atk
+    self.atk = atk
     self.hp = hp
+    
+   def showCardData(self):
+    print(f'{self.name}/n"{self.description}"/nATK: {self.atk}/n{self.hp}')
+    
+   def showSpecificData(self, var):
+    return getattr("self", var)
