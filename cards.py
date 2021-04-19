@@ -5,8 +5,8 @@ class Card:
     self.atk = atk
     self.hp = hp
     
-   def showCardData(self):
-    print(f'{self.name}/n"{self.description}"/nATK: {self.atk}/n{self.hp}')
+  def showCardData(self):
+    print(f'{self.name}:\nDescription: {self.description}\nATK: {self.atk}\nHP: {self.hp}')
     
-   def showSpecificData(self, var):
+  def showSpecificData(self, var):
     return getattr("self", var)
