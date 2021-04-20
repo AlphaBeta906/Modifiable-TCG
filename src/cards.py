@@ -1,12 +1,22 @@
 class Card:
-  def __init__(self, name, description, atk, hp):
+  def __init__(self, name, description, atk:int, hp:int, items_active=[]):
     self.name = name
     self.description = description
-    self.atk = atk
-    self.hp = hp
+
+    item_boosts = [[], []]
+    for item in items_active:
+      item_boosts[0].append(item.atk_diff)
+      item_boosts[1].append(item.hp_diff)
+
+    self.atk = atk + sum(item_boosts[0])
+    self.hp = hp + sum(item_boosts[1])
     
   def showCardData(self):
-    print(f'{self.name}:\nDescription: {self.description}\nATK: {self.atk}\nHP: {self.hp}')
+    print (f'{self.name}:\nDESCRIPTION: "{self.description}" \nCURRENT ATK: {self.atk}\nCURRENT HP: {self.atk}')
     
-  def showSpecificData(self, var):
-    return getattr("self", var)
+class Item:
+  def __init__(self, name, description, atk_diff:int, hp_diff:int):
+    self.name = name
+    self.description = description
+    self.atk_diff = atk_diff
+    self.hp_diff = hp_diff
