@@ -3,8 +3,6 @@
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/AlphaBeta906)
 [![Issues](https://img.shields.io/github/issues/alphabeta906/Modifiable-TCG)](https://github.com/issues/alphabeta906/Modifiable-TCG)
 # MODIFIABLE-TCG
-Editing guide: [link](editing_guides/editing_v1.0.0.md)
-
 This repository contains the code for a simple Trading Card Game written in Python 3.9.
 All source code is inside the folder `src`, available for everyone.
 
