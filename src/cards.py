@@ -12,7 +12,7 @@ class Card:
     self.hp = hp + sum(item_boosts[1])
     
   def showCardData(self):
-    print (f'{self.name}:\nDESCRIPTION: "{self.description}" \nCURRENT ATK: {self.atk}\nCURRENT HP: {self.atk}')
+    print (f'\n{self.name}:\n\tDESCRIPTION: "{self.description}" \n\tCURRENT ATK: {self.atk}\n\tCURRENT HP: {self.atk}')
     
 class Item:
   def __init__(self, name, description, atk_diff:int, hp_diff:int):
@@ -20,3 +20,6 @@ class Item:
     self.description = description
     self.atk_diff = atk_diff
     self.hp_diff = hp_diff
+
+  def showCardData(self):
+    print (f'\n{self.name}:\n\tDESCRIPTION: "{self.description}" \n\tCURRENT ATK: {self.atk_diff}\n\tCURRENT HP: {self.atk_diff}')
