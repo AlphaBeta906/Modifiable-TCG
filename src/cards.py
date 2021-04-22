@@ -22,4 +22,4 @@ class Item:
     self.hp_diff = hp_diff
 
   def showCardData(self):
-    print (f'\n{self.name}:\n\tDESCRIPTION: "{self.description}" \n\tCURRENT ATK: {self.atk_diff}\n\tCURRENT HP: {self.atk_diff}')
+    print (f'\n{self.name}:\n\tDESCRIPTION: "{self.description}" \n\tCHANGE IN ATK: {self.atk_diff}\n\tCHANGE IN HP: {self.atk_diff}')
