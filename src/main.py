@@ -3,7 +3,10 @@
 # Import all the classes (dont change)
 from cards import *
 from player import *
+from update import *
 from random import choices
+
+Update()
 
 # Card Dictionary (edit here!)
 cards = [Card("AlphaBeta", "AlphaBeta is a GOD, yeah right a GOD, BOW DOWN TO HIM.", 1000, 1000),
