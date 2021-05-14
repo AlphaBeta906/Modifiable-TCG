@@ -22,6 +22,8 @@ This option is much more preferable if you wish to change the game's code.
 2. Download all files in the `src` directory, which include:
     - `main.py` 
     - `card.py`
+    - `player.py`
+    - `update.py`
 2. In the same directory of your choice, copy/move these files.<br><br>
 
 The game runs much better in the **terminal**. If you want to play, go to the command line and the game's directory and enter `py main.py` to run.<br>
