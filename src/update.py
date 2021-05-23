@@ -1,7 +1,7 @@
 import sys
 import os
 
-__version__ = "V1.1.3"
+__version__ = "V1.1.2"
 programs = ["main.py", "player.py", "card.py", "update.py"]
 
 class Update:
@@ -24,10 +24,11 @@ class Update:
       desision = input("> ")
 
       if desision == "y":
+
         for code in programs:
           x = requests.get("https://raw.githubusercontent.com/AlphaBeta906/Modifiable-TCG/main/src/main.py")
-          open("main.py", "w").write(x)
-          file_size = os.getsize(x)
+          open("main.py", "w").write(x.text)
+          file_size = os.getsize(x.txt)
           print (f"Sucessfully imported: {code} {newVersion} ({file_size})")
 
         print ("Version {newVersion} is now imported\nPLEASE CHECK GITHUB REPO FOR NEW FILES TO DOWNLOAD")
