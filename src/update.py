@@ -24,12 +24,11 @@ class Update:
       desision = input("> ")
 
       if desision == "y":
-
         for code in programs:
           x = requests.get("https://raw.githubusercontent.com/AlphaBeta906/Modifiable-TCG/main/src/main.py")
           open("main.py", "w").write(x)
           file_size = os.getsize(x)
-          print (f"Sucessfully imported: {code} {newVersion} ({file_size})
+          print (f"Sucessfully imported: {code} {newVersion} ({file_size})")
 
         print ("Version {newVersion} is now imported\nPLEASE CHECK GITHUB REPO FOR NEW FILES TO DOWNLOAD")
       else:
