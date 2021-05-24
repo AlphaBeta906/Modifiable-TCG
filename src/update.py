@@ -1,16 +1,15 @@
 import sys
 
-try:
-  import requests
-except ModuleNotFoundError:
-  print('Updating uses requests, to download it, use "python -m pip install requests" or "pip install requests"')
-  sys.exit()
-
-__version__ = "V1.1.2"
+__version__ = "V1.1.3"
 programs = ["main.py", "player.py", "card.py", "update.py"]
 
 class Update:
-  
+  try:
+    import requests
+  except ModuleNotFoundError:
+    print('Updating uses requests, to download it, use "python -m pip install requests" or "pip install requests"')
+    sys.exit()
+
   def __init__(self): 
     x = requests.get("https://raw.githubusercontent.com/AlphaBeta906/Modifiable-TCG/main/src/update.py")
         
