@@ -14,7 +14,7 @@ The game is available at https://replit.com/@AlphaBeta906/Modifiable-TCG. To pla
 
 # Downloading (release)
 The guides for downloading the game are in the releases section. Each page has its own guide.<br>
-The latest version is `v1.1.2` and it is available [here](https://github.com/AlphaBeta906/Modifiable-TCG/releases/v1.1.0).
+The latest version is `v1.1.3` and it is available [here](https://github.com/AlphaBeta906/Modifiable-TCG/releases/v1.1.0).
 
 # Downloading (via source code)
 This option is much more preferable if you wish to change the game's code.
