@@ -13,7 +13,11 @@ cards = [Card("AlphaBeta", "AlphaBeta is a GOD, yeah right a GOD, BOW DOWN TO HI
   Card("Underdog", "Underdog is a monster/GOD hybrid.", 180, 70),
   Item("EPIC GAMER!!!1111", "ok", 100, 100)]
   
-player = Player(choices(cards, k=5))
-print("Player deck:")
-for x in player.cards:
-  x.showCardData()
+def main():
+  player = Player(choices(cards, k=5))
+  print("Player deck:")
+  for x in player.cards:
+    x.showCardData()
+    
+if __name__ == "__main__":
+  main()
