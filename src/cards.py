@@ -14,6 +14,9 @@ class Card:
   def showCardData(self):
     print (f'\n{self.name}:\n\tDESCRIPTION: "{self.description}" \n\tCURRENT ATK: {self.atk}\n\tCURRENT HP: {self.atk}')
     
+  def atk(self, atk:int):
+    self.atk -= atk
+    
 class Item:
   def __init__(self, name, description, atk_diff:int, hp_diff:int):
     self.name = name
